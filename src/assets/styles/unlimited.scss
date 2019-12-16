@@ -1,0 +1,69 @@
+.base-box {
+  // 基础布局
+  min-height: 65vh;
+  overflow-y: auto;
+  margin: 20px;
+  margin-bottom: 100px;
+  padding: 6px 20px 20px 30px;
+  font-size: 12px;
+  border-radius: 5px;
+  background: $color-background;
+
+  .header {
+    // 基础头部布局
+    display: flex;
+    justify-content: left;
+    padding-bottom: 10px;
+    .h2 {
+      font-size: 24px;
+      font-family: " Microsoft YaHei";
+    }
+    .status {
+      margin-left: 15px;
+      padding: 0 10px;
+      line-height: 27px;
+      font-size: 14px;
+      color: #fff;
+      border-radius: 5px;
+    }
+    .el-input {
+      width: 250px;
+    }
+  }
+
+  hr {
+    color: #E4E7ED;
+    border: 1px solid #E4E7ED;
+    margin: 2px 0 8px;
+  }
+
+  .base-content {
+    padding-bottom: 28px;
+    // 信息栏布局
+    .img {
+      width: 100%;
+      height: 150px;
+      padding: 0;
+      img {
+        height: 150px;
+      }
+    }
+    .h-mess {
+      display: flex;
+      height: 30px;
+      color: #74767a;
+      .w-l {
+        color: #74767a;
+        width: 100px;
+      }
+      .w-r {
+        color: #323538;
+      }
+    }
+  }
+
+  // tab栏信息
+  .tab {
+    margin-top: 12px;
+  }
+}

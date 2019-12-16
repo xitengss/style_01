@@ -1,0 +1,5 @@
+export const SET_USER = 'SET_USER'
+export const SET_USER_TOKEN = 'SET_USER_TOKEN'
+export const SET_CURRENT_MENU_ID = 'SET_CURRENT_MENU_ID'
+export const SET_FUNCLIST = 'SET_FUNCLIST'
+export const SET_COLLAPSED = 'SET_COLLAPSED'

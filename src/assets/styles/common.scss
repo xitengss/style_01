@@ -1,0 +1,368 @@
+.font_cont {
+    // 文本超出省略号
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.text-r {
+    text-align: right;
+}
+
+.text-c {
+    text-align: center;
+}
+
+.font16 {
+    // 16号字体
+    font-size: $font-size-medium-x;
+}
+
+.font-w-600 {
+    font-weight: 600 !important;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.vw-70 {
+    width: 70vw;
+}
+
+.main-color {
+    // 主颜色
+    color: $main-color;
+}
+
+.grey-color {
+    // 灰色
+    color: $color-text-l;
+}
+
+.grey-color-l {
+    color: $color-text-ll;
+}
+
+.warning {
+    // 警告颜色
+    color: $color-warning;
+}
+
+.success {
+    // 成功颜色
+    color: $color-success;
+}
+
+.danger {
+    // 危险颜色
+    color: $color-error;
+}
+
+.active-color {
+    // 高亮颜色
+    color: $main-color;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.felx-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-10 {
+    padding-left: 10px;
+}
+
+.left-20 {
+    margin-left: 20px;
+}
+
+.margin-10 {
+    margin-top: 10px;
+}
+
+.margin-20 {
+    margin-top: 20px;
+}
+
+.padding-tb-10 {
+    padding: 10px 0;
+}
+
+.padding-10 {
+    padding: 10px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.base-box {
+    // 基础布局
+    min-height: 65vh;
+    overflow-y: auto;
+    margin: 20px;
+    margin-bottom: 100px;
+    padding: 20px;
+    border-radius: 5px;
+    background: $color-background;
+
+    .header {
+        // 基础头部布局
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+
+        .el-input {
+            width: 250px;
+        }
+    }
+
+    .base-breadcumb {
+        // 基本面包屑
+        padding: 10px 0;
+
+        .active {
+            .el-breadcrumb__inner {
+                color: $color-text-ll;
+            }
+
+            .el-breadcrumb__separator {
+                color: $color-text-ll;
+            }
+        }
+    }
+
+    .page-box {
+        // 基础分页
+        text-align: right;
+        margin: 10px 5px 0 0;
+    }
+}
+
+.el-dialog {
+
+    // 基础弹窗
+    .el-dialog__header {
+        border-bottom: 1px solid $color-border;
+    }
+
+    .el-dialog__body {
+        padding: 20px;
+        max-height: 70vh;
+        overflow: auto;
+
+        .content {
+            .el-select {
+                width: 100%;
+            }
+        }
+    }
+
+    .el-dialog__footer {
+        border-top: 1px solid $color-border;
+        padding: 10px 20px;
+    }
+}
+
+.my-tree {
+    // 树结构样式
+    margin-top: 5px;
+
+    .el-tree-node__content {
+        height: 40px;
+    }
+
+    .el-tree-node.is-current>.el-tree-node__content {
+        color: $main-color;
+        background-color: #ebf8f0;
+        border-right: 3px solid $main-color;
+    }
+}
+
+.my-table {
+    margin: 10px 0;
+    min-width: 924px;
+
+    .el-table__header-wrapper {
+
+        // 表头
+        .el-table__header {
+            display: table-header-group;
+            vertical-align: middle;
+            border-color: inherit;
+            background-color: $color-highlight-background;
+
+            .has-gutter {
+                tr {
+                    height: 56px;
+
+                    th {
+                        background: $color-highlight-background;
+                        color: $color-text-l;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.el-popover__reference {
+    margin-left: 10px;
+}
+
+.is-dot {
+    // 圆点
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+    margin-right: 5px;
+    background-color: $main-color;
+    box-sizing: border-box;
+}
+
+.base-content {
+    padding: 20px 0;
+
+    .h-30 {
+        height: 30px;
+    }
+
+    .img {
+        position: relative;
+        padding-right: 20px;
+
+        .status {
+            position: absolute;
+            top: 0;
+            right: 20px;
+            z-index: 1;
+            padding: 6px 10px;
+            color: $color-text-white;
+            background: $main-color;
+            border-bottom-left-radius: 12px;
+        }
+
+        img {
+            height: 120px;
+        }
+    }
+
+    .content {
+        margin-top: 10px;
+        text-indent: 14px;
+        line-height: 20px;
+    }
+
+    .img-list {
+        margin-top: 10px;
+
+        img {
+            width: 160px;
+            height: 160px;
+            padding-right: 10px;
+        }
+    }
+}
+
+.title-left-boder {
+    padding-left: 10px;
+    border-left: 4px solid $main-color;
+}
+
+.border-bottom {
+    border-bottom: 1px solid $color-border;
+}
+
+.border-bottom-dashed {
+    border-bottom: 1px dashed $color-border;
+}
+
+.border-bottom-solid {
+    border-bottom: 2px solid $color-border;
+}
+
+.border-bottom-two {
+    border-bottom: 2px dashed $color-border;
+}
+
+.bg-icon {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: $color-text-white;
+    border-radius: 50%;
+    background: $main-color;
+}
+
+.cover-upload {
+
+    // 图片上传组建样式
+    .el-upload--picture-card,
+    .el-upload-list__item {
+        display: block;
+        width: 100%;
+        height: 160px;
+    }
+
+    &.hidden {
+        .el-upload--picture-card {
+            display: none !important;
+        }
+    }
+}
+
+.el-upload--picture-card {
+    padding-top: 50px;
+    line-height: inherit;
+}
+
+.single-upload {
+    &.hidden {
+        .el-upload--picture-card {
+            display: none !important;
+        }
+    }
+}
+
+.el-step:last-of-type .el-step__main,
+.el-step:last-of-type .el-step__description {
+    padding-right: 5%;
+}
+
+.el-date-editor .el-range-separator {
+    width: 20px;
+}
+
+.text-btn {
+    display: inline-block;
+    min-width: 80px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 10px;
+
+    &.active {
+        border-radius: 20px;
+        color: $color-text-white;
+        background: $main-color;
+    }
+}
+
+.display-inline-block {
+    display: inline-block;
+}

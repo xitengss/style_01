@@ -1,0 +1,44 @@
+$main-color: #0295ff;
+
+// 颜色定义规范
+$color-background: #fff;
+$color-background-d: #f0f2f5;
+$color-highlight-background: #fafafa;
+$color-dialog-background: #666;
+
+$color-border: #e8e8e8;
+$color-border-d: $main-color;
+
+$color-error: #ff2602;
+$color-warning: #ffaf02;
+$color-success: #00d16c;
+$color-grey: #bbb;
+
+$color-text: #000;
+$color-text-d: #333;
+$color-text-l: #666;
+$color-text-ll: #999;
+$color-text-lll: #ccc;
+$color-text-white: #fff;
+
+//字体定义规范
+$font-size-samll-s: 10px;
+$font-size-small: 12px;
+$font-size-medium: 14px;
+$font-size-medium-x: 16px;
+$font-size-large: 18px;
+$font-size-large-x: 20px;
+
+// menus宽度
+$shrink-width: 60px;
+$eunfold-width: 210px;
+
+:export {
+  mainColor: $main-color;
+  errorColor: $color-error;
+  warningColor: $color-warning;
+  successColor: $color-success;
+  greyColor: $color-grey;
+  menuShrinkWidth: $shrink-width;
+  menuEunfoldWidth: $eunfold-width;
+}
